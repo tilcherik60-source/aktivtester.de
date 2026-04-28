@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Affiliate-Hinweis – AktivTester.de</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Epilogue:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --bg: #0a0a0a; --bg2: #111111; --border: #222222;
+      --text: #f2f0eb; --muted: #666660; --muted2: #999990; --accent: #c8f135;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Epilogue', sans-serif; font-size: 16px; line-height: 1.7; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(10,10,10,0.9); backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1180px; margin: 0 auto; padding: 0 24px;
+      height: 60px; display: flex; align-items: center; justify-content: space-between;
+    }
+    .logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.6rem; letter-spacing: 0.06em; color: var(--text); text-decoration: none; }
+    .logo span { color: var(--accent); }
+
+    .page-wrap { max-width: 760px; margin: 0 auto; padding: 64px 24px 80px; }
+
+    .page-kicker {
+      font-size: 0.72rem; font-weight: 500; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--accent);
+      display: flex; align-items: center; gap: 8px; margin-bottom: 16px;
+    }
+    .page-kicker::before { content: ''; display: block; width: 24px; height: 1px; background: var(--accent); }
+
+    .page-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 3.5rem; letter-spacing: 0.02em; line-height: 1;
+      margin-bottom: 16px;
+    }
+
+    .page-intro {
+      color: var(--muted2); font-weight: 300; font-size: 1rem;
+      line-height: 1.7; margin-bottom: 48px; max-width: 600px;
+    }
+
+    .legal-section { margin-bottom: 40px; }
+
+    .legal-section h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.4rem; letter-spacing: 0.04em;
+      color: var(--text); margin-bottom: 12px;
+      padding-bottom: 10px; border-bottom: 1px solid var(--border);
+    }
+
+    .legal-section p {
+      color: var(--muted2); font-weight: 300; font-size: 0.95rem;
+      margin-bottom: 10px; line-height: 1.7;
+    }
+
+    .legal-section strong { color: var(--text); font-weight: 400; }
+
+    /* How it works cards */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      margin: 20px 0 40px;
+    }
+
+    .step {
+      background: var(--bg2);
+      padding: 24px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .step-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2rem;
+      color: var(--accent);
+      line-height: 1;
+    }
+
+    .step-title {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .step-desc {
+      font-size: 0.82rem;
+      color: var(--muted2);
+      font-weight: 300;
+      line-height: 1.6;
+    }
+
+    /* Highlight box */
+    .highlight-box {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      padding: 22px 24px;
+      margin: 20px 0 40px;
+    }
+
+    .highlight-box p {
+      color: var(--muted2); font-size: 0.92rem;
+      font-weight: 300; line-height: 1.7; margin: 0;
+    }
+
+    .highlight-box strong { color: var(--text); font-weight: 400; }
+
+    /* Programs table */
+    .programs {
+      border: 1px solid var(--border);
+      margin: 20px 0 40px;
+    }
+
+    .program-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border);
+      background: var(--bg2);
+      font-size: 0.88rem;
+    }
+
+    .program-row:last-child { border-bottom: none; }
+
+    .program-row.header {
+      background: var(--bg);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .program-name { color: var(--text); font-weight: 400; }
+    .program-commission { color: var(--accent); font-weight: 400; }
+    .program-note { color: var(--muted2); font-weight: 300; }
+
+    footer { border-top: 1px solid var(--border); background: var(--bg2); }
+    .footer-inner {
+      max-width: 1180px; margin: 0 auto; padding: 32px 24px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .footer-logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.2rem; letter-spacing: 0.06em; }
+    .footer-logo span { color: var(--accent); }
+    .footer-links { display: flex; gap: 24px; }
+    .footer-links a { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.04em; text-transform: uppercase; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--text); }
+
+    @media (max-width: 600px) {
+      .steps { grid-template-columns: 1fr; }
+      .program-row { grid-template-columns: 1fr 1fr; }
+      .program-note { display: none; }
+      .footer-inner { flex-direction: column; gap: 20px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-inner">
+      <a href="index.html" class="logo">Aktiv<span>Tester</span></a>
+    </div>
+  </header>
+
+  <div class="page-wrap">
+
+    <div class="page-kicker">Transparenz</div>
+    <h1 class="page-title">Affiliate-Hinweis</h1>
+    <p class="page-intro">
+      AktivTester.de ist vollständig kostenlos und werbefrei. Um die Seite zu betreiben, nutzen wir Affiliate-Programme. Hier erklären wir dir offen und ehrlich wie das funktioniert.
+    </p>
+
+    <div class="legal-section">
+      <h2>Wie funktioniert Affiliate?</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div class="step-title">Du klickst auf einen Link</div>
+          <div class="step-desc">Auf unserer Seite findest du Links zu Produkten bei Amazon und anderen Shops.</div>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div class="step-title">Du kaufst ein Produkt</div>
+          <div class="step-desc">Wenn du innerhalb von 24 Stunden nach dem Klick etwas kaufst, erhalten wir eine kleine Provision.</div>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div class="step-title">Keine Mehrkosten für dich</div>
+          <div class="step-desc">Der Preis für dich bleibt exakt gleich – egal ob du über unseren Link kaufst oder nicht.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="legal-section">
+      <h2>Unsere Grundsätze</h2>
+      <div class="highlight-box">
+        <p>
+          Wir empfehlen <strong>nur Produkte, von denen wir wirklich überzeugt sind</strong> – unabhängig davon ob und wie viel Provision wir dafür erhalten. Unsere Bewertungen und Vergleiche basieren auf echten Kriterien wie Preis-Leistung, Qualität und Nutzererfahrungen. <strong>Affiliate-Einnahmen beeinflussen unsere redaktionelle Unabhängigkeit nicht.</strong>
+        </p>
+      </div>
+    </div>
+
+    <div class="legal-section">
+      <h2>An welchen Programmen nehmen wir teil?</h2>
+      <div class="programs">
+        <div class="program-row header">
+          <span>Programm</span>
+          <span>Provision</span>
+          <span>Hinweis</span>
+        </div>
+        <div class="program-row">
+          <span class="program-name">Amazon Partnernet</span>
+          <span class="program-commission">1–10%</span>
+          <span class="program-note">Je nach Produktkategorie</span>
+        </div>
+        <div class="program-row">
+          <span class="program-name">Weitere Shops</span>
+          <span class="program-commission">Variiert</span>
+          <span class="program-note">Werden hier ergänzt</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="legal-section">
+      <h2>Kennzeichnung von Affiliate-Links</h2>
+      <p>Alle Affiliate-Links auf AktivTester.de sind klar gekennzeichnet – entweder direkt am Link oder mit dem Hinweis <strong>„* Affiliate-Link"</strong> bzw. einem entsprechenden Hinweis im Artikel. So weißt du immer, wann du auf einen Affiliate-Link klickst.</p>
+    </div>
+
+    <div class="legal-section">
+      <h2>Rechtlicher Hinweis</h2>
+      <p>Diese Website nimmt am Amazon Partnerprogramm teil, einem Affiliate-Werbeprogramm, das es Webseiten ermöglicht, durch die Platzierung von Werbeanzeigen und Links zu Amazon.de Werbeentgelte zu verdienen. Als Amazon-Partner verdienen wir an qualifizierten Käufen.</p>
+      <p>Weitere Informationen zum Datenschutz findest du in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Aktiv<span>Tester</span>.de</div>
+      <div class="footer-links">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="affiliate.html">Affiliate</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
