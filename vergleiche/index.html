@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alle Vergleiche – AktivTester.de</title>
+  <meta name="description"
+    content="Alle Produktvergleiche auf AktivTester.de – Heimtraining, Gym, Laufen und Ernährung auf einen Blick." />
+  <link rel="icon" type="image/png" href="../favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Epilogue:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Epilogue:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../shared.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">Aktiv<span>Tester</span></a>
+      <nav class="nav-links">
+        <a href="../heimtraining/index.html">Heimtraining</a>
+        <a href="../gym/index.html">Gym</a>
+        <a href="../laufen/index.html">Laufen</a>
+        <a href="../ernaehrung/index.html">Ernährung</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-wrap">
+
+    <div class="page-hero">
+      <div class="page-kicker">Übersicht</div>
+      <h1>Alle Vergleiche</h1>
+      <p>Alle Produktvergleiche auf AktivTester.de – nach Kategorie filterbar. Aktuell <strong id="article-count"
+          style="color:var(--text)">4</strong> Artikel.</p>
+    </div>
+
+    <!-- FILTER -->
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterCat('alle')">Alle</button>
+      <button class="filter-btn" onclick="filterCat('heimtraining')">🏋️ Heimtraining</button>
+      <button class="filter-btn" onclick="filterCat('gym')">💪 Gym</button>
+      <button class="filter-btn" onclick="filterCat('laufen')">🏃 Laufen</button>
+      <button class="filter-btn" onclick="filterCat('ernaehrung')">🥗 Ernährung</button>
+    </div>
+
+    <!-- ARTICLES -->
+    <div class="articles-grid" id="articles-list">
+
+      <a href="../heimtraining/widerstandsbaender.html" class="article-row" data-cat="heimtraining">
+        <div class="row-num">01</div>
+        <div class="row-info">
+          <div class="row-cat cat-heimtraining">Heimtraining</div>
+          <div class="row-title">Widerstandsbänder Sets – Welches hält wirklich?</div>
+          <div class="row-desc">Gritin, Fokky, FitBeast – die 7 meistgekauften Sets auf Amazon.de mit echten
+            Bewertungen.</div>
+        </div>
+        <div class="row-right">
+          <span class="row-date">Apr 2025</span>
+          <span class="row-arrow">Lesen →</span>
+        </div>
+      </a>
+
+      <a href="../gym/zughilfen.html" class="article-row" data-cat="gym">
+        <div class="row-num">02</div>
+        <div class="row-info">
+          <div class="row-cat cat-gym">Gym & Krafttraining</div>
+          <div class="row-title">Zughilfen im Test – Die besten Lifting Straps 2025</div>
+          <div class="row-desc">Fitgriff, Athletic Aesthetics, Beast Gear – welche Zughilfen halten bei schweren
+            Gewichten?</div>
+        </div>
+        <div class="row-right">
+          <span class="row-date">Apr 2025</span>
+          <span class="row-arrow">Lesen →</span>
+        </div>
+      </a>
+
+      <a href="../laufen/laufschuhe-anfaenger.html" class="article-row" data-cat="laufen">
+        <div class="row-num">03</div>
+        <div class="row-info">
+          <div class="row-cat cat-laufen">Laufen</div>
+          <div class="row-title">Laufschuhe für Anfänger – Die 5 besten Modelle 2025</div>
+          <div class="row-desc">Brooks Ghost 16, ASICS Gel-Nimbus 26, Nike Pegasus 41 – welcher Schuh passt für
+            Einsteiger?</div>
+        </div>
+        <div class="row-right">
+          <span class="row-date">Apr 2025</span>
+          <span class="row-arrow">Lesen →</span>
+        </div>
+      </a>
+
+      <a href="../ernaehrung/proteinpulver.html" class="article-row" data-cat="ernaehrung">
+        <div class="row-num">04</div>
+        <div class="row-info">
+          <div class="row-cat cat-ernaehrung">Ernährung</div>
+          <div class="row-title">Proteinpulver Vergleich 2025 – Welches lohnt sich wirklich?</div>
+          <div class="row-desc">ESN Designer Whey, MyProtein, Optimum Nutrition – die beliebtesten Whey-Produkte
+            verglichen.</div>
+        </div>
+        <div class="row-right">
+          <span class="row-date">Apr 2025</span>
+          <span class="row-arrow">Lesen →</span>
+        </div>
+      </a>
+
+      <!-- NEUEN ARTIKEL HINZUFÜGEN: Kopiere einen article-row Block und passe ihn an -->
+
+    </div>
+
+    <div class="empty-state" id="empty-state">
+      <p>Keine Artikel in dieser Kategorie gefunden.</p>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Aktiv<span>Tester</span>.de</div>
+      <div class="footer-links">
+        <a href="../impressum.html">Impressum</a>
+        <a href="../datenschutz.html">Datenschutz</a>
+        <a href="../affiliate.html">Affiliate</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function filterCat(cat) {
+      // Update buttons
+      document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+
+      // Filter rows
+      const rows = document.querySelectorAll('.article-row');
+      let visible = 0;
+
+      rows.forEach((row, i) => {
+        const match = cat === 'alle' || row.dataset.cat === cat;
+        row.style.display = match ? '' : 'none';
+        if (match) {
+          visible++;
+          // Renumber visible rows
+          row.querySelector('.row-num').textContent = String(visible).padStart(2, '0');
+        }
+      });
+
+      // Show/hide empty state
+      document.getElementById('empty-state').style.display = visible === 0 ? 'block' : 'none';
+      document.getElementById('article-count').textContent = visible;
+    }
+  </script>
+
+</body>
+
+</html>

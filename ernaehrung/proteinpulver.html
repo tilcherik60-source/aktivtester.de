@@ -1,520 +1,21 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Proteinpulver Vergleich 2025 – Welches lohnt sich wirklich? | AktivTester</title>
-  <meta name="description" content="ESN Designer Whey, MyProtein Impact Whey oder Optimum Nutrition? Wir vergleichen die beliebtesten Proteinpulver auf Amazon.de – mit echten Daten und klarer Empfehlung."/>
+  <meta name="description"
+    content="ESN Designer Whey, MyProtein Impact Whey oder Optimum Nutrition? Wir vergleichen die beliebtesten Proteinpulver auf Amazon.de – mit echten Daten und klarer Empfehlung." />
   <link rel="icon" type="image/png" href="../favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Epilogue:wght@300;400;500&display=swap" rel="stylesheet"/>
-  <style>
-    /* ── Design Tokens ── */
-    :root {
-      --bg:      #0a0a0a;
-      --bg2:     #111111;
-      --bg3:     #181818;
-      --border:  #222222;
-      --border2: #2e2e2e;
-      --text:    #f2f0eb;
-      --muted:   #666660;
-      --muted2:  #999990;
-      --accent:  #c8f135;
-      --red:     #f13535;
-      --green:   #35f17a;
-    }
-
-    /* ── Reset ── */
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Epilogue', sans-serif;
-      font-size: 16px;
-      line-height: 1.7;
-    }
-
-    a { text-decoration: none; color: inherit; }
-
-    /* ── Header / Nav ── */
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: rgba(10, 10, 10, 0.92);
-      backdrop-filter: blur(20px);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .nav-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0 24px;
-      height: 60px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.6rem;
-      letter-spacing: 0.06em;
-    }
-    .logo span { color: var(--accent); }
-
-    .nav-links { display: flex; gap: 24px; }
-    .nav-links a {
-      font-size: 0.82rem;
-      color: var(--muted2);
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      transition: color 0.2s;
-    }
-    .nav-links a:hover { color: var(--text); }
-
-    /* ── Breadcrumb ── */
-    .breadcrumb {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px 24px 0;
-      display: flex;
-      gap: 8px;
-      align-items: center;
-      color: var(--muted);
-      font-size: 0.8rem;
-    }
-    .breadcrumb a  { color: var(--muted); }
-    .breadcrumb span { color: var(--border2); }
-
-    /* ── Article Header ── */
-    .article-header {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 28px 24px 36px;
-    }
-
-    .art-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.7rem;
-      font-weight: 500;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 18px;
-    }
-    .art-tag::before {
-      content: '';
-      display: block;
-      width: 20px;
-      height: 1px;
-      background: var(--accent);
-    }
-
-    .article-header h1 {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(2rem, 5vw, 3.4rem);
-      letter-spacing: 0.02em;
-      line-height: 1.05;
-      margin-bottom: 20px;
-    }
-    .article-header h1 em { font-style: normal; color: var(--accent); }
-
-    .article-meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 18px;
-      align-items: center;
-      padding: 16px 0;
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      margin-bottom: 32px;
-    }
-    .meta-item { font-size: 0.8rem; color: var(--muted2); }
-    .meta-dot {
-      width: 4px;
-      height: 4px;
-      background: var(--border2);
-      border-radius: 50%;
-      display: inline-block;
-    }
-
-    /* ── Quick Answer ── */
-    .quick-answer {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
-
-    .qa-box {
-      background: var(--bg2);
-      border: 1px solid var(--border2);
-      border-left: 3px solid var(--accent);
-      padding: 20px 24px;
-      margin-bottom: 40px;
-    }
-
-    .qa-label {
-      font-size: 0.7rem;
-      font-weight: 500;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 10px;
-    }
-
-    .qa-text {
-      font-size: 0.93rem;
-      color: var(--muted2);
-      font-weight: 300;
-      line-height: 1.7;
-    }
-    .qa-text strong { color: var(--text); font-weight: 400; }
-
-    /* ── Article Body ── */
-    .article-body {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 0 24px 80px;
-    }
-
-    .article-body p {
-      color: #c0beb8;
-      font-weight: 300;
-      margin-bottom: 20px;
-      font-size: 0.97rem;
-    }
-
-    .article-body h2 {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.8rem;
-      letter-spacing: 0.03em;
-      margin: 52px 0 18px;
-      padding-bottom: 12px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .source-note {
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      border-left: 3px solid var(--border2);
-      padding: 14px 18px;
-      margin-bottom: 32px;
-    }
-    .source-note p {
-      font-size: 0.8rem;
-      color: var(--muted);
-      font-weight: 300;
-      line-height: 1.6;
-    }
-    .source-note strong { color: var(--muted2); font-weight: 400; }
-
-    /* ── Comparison Table ── */
-    .table-wrap { overflow-x: auto; margin: 28px 0; }
-
-    table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
-
-    thead th {
-      background: var(--bg3);
-      color: var(--muted);
-      font-size: 0.7rem;
-      font-weight: 500;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      padding: 12px 14px;
-      text-align: left;
-      border-bottom: 1px solid var(--border);
-    }
-
-    tbody tr {
-      border-bottom: 1px solid var(--border);
-      transition: background 0.15s;
-    }
-    tbody tr:hover       { background: var(--bg2); }
-    tbody tr:last-child  { border-bottom: none; }
-
-    tbody td {
-      padding: 13px 14px;
-      color: #c0beb8;
-      font-weight: 300;
-      vertical-align: middle;
-    }
-
-    td.name  { color: var(--text); font-weight: 400; }
-    td.price { color: var(--accent); font-weight: 500; }
-    td.sc    { color: var(--accent); }
-
-    .winner-row td { background: rgba(200, 241, 53, 0.04); }
-
-    .bb {
-      display: inline-block;
-      background: rgba(200, 241, 53, 0.12);
-      border: 1px solid rgba(200, 241, 53, 0.25);
-      color: var(--accent);
-      font-size: 0.65rem;
-      font-weight: 500;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      padding: 2px 8px;
-      border-radius: 2px;
-      margin-left: 6px;
-    }
-
-    /* ── Product Cards ── */
-    .product-card {
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      margin: 32px 0;
-      transition: border-color 0.25s;
-    }
-    .product-card:hover { border-color: var(--border2); }
-
-    .rank-bar {
-      background: var(--accent);
-      color: #0a0a0a;
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 0.75rem;
-      letter-spacing: 0.08em;
-      padding: 4px 14px;
-      display: inline-block;
-    }
-    .rank-bar.s { background: var(--muted2); }
-    .rank-bar.b { background: #cd7f32; }
-
-    .card-body { padding: 24px 26px; }
-
-    .card-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 4px;
-    }
-
-    .card-name {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.3rem;
-      letter-spacing: 0.02em;
-    }
-
-    .card-price {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.6rem;
-      color: var(--accent);
-      letter-spacing: 0.02em;
-      white-space: nowrap;
-    }
-
-    .amz-rating {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 14px;
-    }
-
-    .stars-row    { color: var(--accent); font-size: 0.9rem; letter-spacing: 1px; }
-    .rating-detail { font-size: 0.8rem; color: var(--muted2); font-weight: 300; }
-
-    .rating-row {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      margin-bottom: 20px;
-    }
-
-    .rating-item {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 0.82rem;
-    }
-
-    .rl { color: var(--muted2); font-weight: 300; min-width: 120px; }
-    .rb { flex: 1; height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; }
-    .rf { height: 100%; background: var(--accent); border-radius: 2px; }
-    .rn { color: var(--muted2); font-size: 0.78rem; min-width: 28px; text-align: right; }
-
-    .card-desc {
-      color: var(--muted2);
-      font-size: 0.9rem;
-      font-weight: 300;
-      line-height: 1.65;
-      margin-bottom: 20px;
-    }
-
-    /* ── Pros / Cons ── */
-    .pros-cons {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
-      margin-bottom: 24px;
-    }
-
-    .pros, .cons { background: var(--bg3); padding: 14px 16px; }
-
-    .box-label {
-      font-size: 0.68rem;
-      font-weight: 500;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      margin-bottom: 10px;
-    }
-    .pros .box-label { color: var(--green); }
-    .cons .box-label { color: var(--red); }
-
-    .pros ul, .cons ul {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 7px;
-    }
-
-    .pros li, .cons li {
-      font-size: 0.84rem;
-      color: #c0beb8;
-      font-weight: 300;
-      display: flex;
-      gap: 8px;
-    }
-    .pros li::before { content: '+'; color: var(--green); font-weight: 500; flex-shrink: 0; }
-    .cons li::before { content: '–'; color: var(--red);   font-weight: 500; flex-shrink: 0; }
-
-    /* ── Affiliate Button ── */
-    .affiliate-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      background: var(--accent);
-      color: #0a0a0a;
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 0.95rem;
-      letter-spacing: 0.06em;
-      padding: 13px 26px;
-      transition: opacity 0.2s, transform 0.2s;
-    }
-    .affiliate-btn:hover { opacity: 0.88; transform: translateY(-1px); }
-
-    /* ── Verdict Box ── */
-    .verdict-box {
-      background: var(--bg2);
-      border: 1px solid var(--border2);
-      padding: 28px;
-      margin: 40px 0;
-    }
-
-    .verdict-title {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.4rem;
-      letter-spacing: 0.04em;
-      margin-bottom: 16px;
-      color: var(--accent);
-    }
-
-    .verdict-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 1px;
-      background: var(--border);
-      border: 1px solid var(--border);
-      margin-top: 20px;
-    }
-
-    .verdict-item  { background: var(--bg2); padding: 18px; }
-    .verdict-label {
-      font-size: 0.7rem;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 6px;
-    }
-    .verdict-val {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 1rem;
-      letter-spacing: 0.02em;
-      color: var(--text);
-    }
-
-    /* ── FAQ ── */
-    .faq      { margin: 32px 0; }
-    .faq-item { border-bottom: 1px solid var(--border); padding: 16px 0; }
-
-    .faq-q {
-      font-size: 0.95rem;
-      font-weight: 400;
-      color: var(--text);
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .faq-icon {
-      color: var(--muted);
-      font-size: 1.2rem;
-      flex-shrink: 0;
-      transition: transform 0.2s;
-    }
-
-    .faq-a {
-      font-size: 0.88rem;
-      color: var(--muted2);
-      font-weight: 300;
-      line-height: 1.7;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s ease, padding 0.3s;
-    }
-    .faq-item.open .faq-a    { max-height: 200px; padding-top: 12px; }
-    .faq-item.open .faq-icon { transform: rotate(45deg); }
-
-    /* ── Footer ── */
-    footer { border-top: 1px solid var(--border); background: var(--bg2); }
-
-    .footer-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 32px 24px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .footer-logo {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.2rem;
-      letter-spacing: 0.06em;
-    }
-    .footer-logo span { color: var(--accent); }
-
-    .footer-links { display: flex; gap: 24px; }
-    .footer-links a {
-      font-size: 0.78rem;
-      color: var(--muted);
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      transition: color 0.2s;
-    }
-    .footer-links a:hover { color: var(--text); }
-
-    /* ── Responsive ── */
-    @media (max-width: 700px) {
-      .pros-cons        { grid-template-columns: 1fr; }
-      .verdict-grid     { grid-template-columns: 1fr; }
-      .card-top         { flex-direction: column; gap: 8px; }
-      .nav-links        { display: none; }
-      .footer-inner     { flex-direction: column; gap: 16px; text-align: center; }
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Epilogue:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Epilogue:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../shared.css">
 </head>
+
 <body>
   <header>
     <div class="nav-inner">
@@ -536,7 +37,7 @@
 
   <div class="article-header">
     <div class="art-tag">Sport-Ernährung</div>
-    <h1>Proteinpulver Vergleich –<br/><em>Welches lohnt sich wirklich?</em></h1>
+    <h1>Proteinpulver Vergleich –<br /><em>Welches lohnt sich wirklich?</em></h1>
     <div class="article-meta">
       <span class="meta-item">📅 April 2025</span>
       <span class="meta-dot"></span>
@@ -551,48 +52,85 @@
   <div class="quick-answer">
     <div class="qa-box">
       <div class="qa-label">Schnellantwort</div>
-      <p class="qa-text">Für die meisten Sportler ist das <strong>ESN Designer Whey</strong> die beste Wahl – Deutschlands meistgekauftes Whey, 4,4 Sterne auf Amazon, ~23g Protein pro Portion, viele Geschmäcker, ~30€/kg. Wer günstiger will, nimmt <strong>MyProtein Impact Whey</strong> (~20€/kg). Für Premium-Qualität mit höchstem Proteingehalt empfehlen wir <strong>Optimum Nutrition Gold Standard</strong>.</p>
+      <p class="qa-text">Für die meisten Sportler ist das <strong>ESN Designer Whey</strong> die beste Wahl –
+        Deutschlands meistgekauftes Whey, 4,4 Sterne auf Amazon, ~23g Protein pro Portion, viele Geschmäcker, ~30€/kg.
+        Wer günstiger will, nimmt <strong>MyProtein Impact Whey</strong> (~20€/kg). Für Premium-Qualität mit höchstem
+        Proteingehalt empfehlen wir <strong>Optimum Nutrition Gold Standard</strong>.</p>
     </div>
   </div>
 
   <div class="article-body">
-    <p>Proteinpulver ist eines der meistverkauften Nahrungsergänzungsmittel auf Amazon.de – und die Auswahl ist riesig. Aber welches lohnt sich wirklich? Wir haben die meistgekauften Whey-Produkte nach Proteingehalt, Geschmack, Löslichkeit und Preis-Leistungs-Verhältnis verglichen.</p>
-    <p>Wichtig vorab: Kein Proteinpulver ersetzt eine ausgewogene Ernährung. Es ist eine praktische Ergänzung nach dem Training, wenn du deinen Proteinbedarf über die Mahlzeiten nicht deckst.</p>
+    <p>Proteinpulver ist eines der meistverkauften Nahrungsergänzungsmittel auf Amazon.de – und die Auswahl ist riesig.
+      Aber welches lohnt sich wirklich? Wir haben die meistgekauften Whey-Produkte nach Proteingehalt, Geschmack,
+      Löslichkeit und Preis-Leistungs-Verhältnis verglichen.</p>
+    <p>Wichtig vorab: Kein Proteinpulver ersetzt eine ausgewogene Ernährung. Es ist eine praktische Ergänzung nach dem
+      Training, wenn du deinen Proteinbedarf über die Mahlzeiten nicht deckst.</p>
 
     <div class="source-note">
-      <p><strong>Datengrundlage:</strong> Amazon.de Bewertungen, eiweisspulver-test.com, droptime.de und Herstellerangaben (Stand April 2025). Nährwerte sind Richtwerte und können je nach Geschmacksrichtung leicht abweichen.</p>
+      <p><strong>Datengrundlage:</strong> Amazon.de Bewertungen, eiweisspulver-test.com, droptime.de und
+        Herstellerangaben (Stand April 2025). Nährwerte sind Richtwerte und können je nach Geschmacksrichtung leicht
+        abweichen.</p>
     </div>
 
     <h2>Schnellvergleich: 6 Produkte auf einen Blick</h2>
     <div class="table-wrap">
       <table>
         <thead>
-          <tr><th>Produkt</th><th>Preis/kg ca.</th><th>Protein/Portion</th><th>Amazon-Sterne</th><th>Besonderheit</th></tr>
+          <tr>
+            <th>Produkt</th>
+            <th>Preis/kg ca.</th>
+            <th>Protein/Portion</th>
+            <th>Amazon-Sterne</th>
+            <th>Besonderheit</th>
+          </tr>
         </thead>
         <tbody>
           <tr class="winner-row">
-            <td class="name"><a href="https://www.amazon.de/s?k=ESN+Designer+Whey+Protein&tag=DEIN-AFFILIATE-TAG" target="_blank" rel="noopener" style="color:inherit">ESN Designer Whey</a> <span class="bb">Empfehlung</span></td>
-            <td class="price">~30€</td><td>~23g</td><td class="sc">★★★★☆ 4,4</td><td>Deutschlands Nr.1 Whey</td>
+            <td class="name"><a href="https://www.amazon.de/s?k=ESN+Designer+Whey+Protein&tag=DEIN-AFFILIATE-TAG"
+                target="_blank" rel="noopener" style="color:inherit">ESN Designer Whey</a> <span
+                class="bb">Empfehlung</span></td>
+            <td class="price">~30€</td>
+            <td>~23g</td>
+            <td class="sc">★★★★☆ 4,4</td>
+            <td>Deutschlands Nr.1 Whey</td>
           </tr>
           <tr>
-            <td class="name"><a href="https://www.amazon.de/s?k=MyProtein+Impact+Whey&tag=DEIN-AFFILIATE-TAG" target="_blank" rel="noopener" style="color:inherit">MyProtein Impact Whey</a></td>
-            <td class="price">~20€</td><td>~21g</td><td class="sc">★★★★☆ 4,3</td><td>Günstigstes solides Whey</td>
+            <td class="name"><a href="https://www.amazon.de/s?k=MyProtein+Impact+Whey&tag=DEIN-AFFILIATE-TAG"
+                target="_blank" rel="noopener" style="color:inherit">MyProtein Impact Whey</a></td>
+            <td class="price">~20€</td>
+            <td>~21g</td>
+            <td class="sc">★★★★☆ 4,3</td>
+            <td>Günstigstes solides Whey</td>
           </tr>
           <tr>
-            <td class="name"><a href="https://www.amazon.de/s?k=Optimum+Nutrition+Gold+Standard+Whey&tag=DEIN-AFFILIATE-TAG" target="_blank" rel="noopener" style="color:inherit">Optimum Nutrition Gold Standard</a></td>
-            <td class="price">~35€</td><td>~24g</td><td class="sc">★★★★★ 4,6</td><td>Weltweiter Klassiker</td>
+            <td class="name"><a
+                href="https://www.amazon.de/s?k=Optimum+Nutrition+Gold+Standard+Whey&tag=DEIN-AFFILIATE-TAG"
+                target="_blank" rel="noopener" style="color:inherit">Optimum Nutrition Gold Standard</a></td>
+            <td class="price">~35€</td>
+            <td>~24g</td>
+            <td class="sc">★★★★★ 4,6</td>
+            <td>Weltweiter Klassiker</td>
           </tr>
           <tr>
             <td class="name">Amfit Nutrition (Amazon)</td>
-            <td class="price">~15€</td><td>~21g</td><td class="sc">★★★★☆ 4,2</td><td>Günstigste Option</td>
+            <td class="price">~15€</td>
+            <td>~21g</td>
+            <td class="sc">★★★★☆ 4,2</td>
+            <td>Günstigste Option</td>
           </tr>
           <tr>
             <td class="name">Natural Elements Whey</td>
-            <td class="price">~38€</td><td>~23g</td><td class="sc">★★★★☆ 4,4</td><td>Natürliche Zutaten, kein Süßungsmittel</td>
+            <td class="price">~38€</td>
+            <td>~23g</td>
+            <td class="sc">★★★★☆ 4,4</td>
+            <td>Natürliche Zutaten, kein Süßungsmittel</td>
           </tr>
           <tr>
             <td class="name">Ironmaxx 100% Whey</td>
-            <td class="price">~28€</td><td>~23g</td><td class="sc">★★★★☆ 4,3</td><td>Viele Geschmäcker</td>
+            <td class="price">~28€</td>
+            <td>~23g</td>
+            <td class="sc">★★★★☆ 4,3</td>
+            <td>Viele Geschmäcker</td>
           </tr>
         </tbody>
       </table>
@@ -610,15 +148,36 @@
         </div>
         <div class="amz-rating">
           <span class="stars-row">★★★★☆</span>
-          <span class="rating-detail">4,4 / 5 auf Amazon.de | Nr. 1 laut Statista-Umfrage unter deutschen Proteinpulver-Käufern</span>
+          <span class="rating-detail">4,4 / 5 auf Amazon.de | Nr. 1 laut Statista-Umfrage unter deutschen
+            Proteinpulver-Käufern</span>
         </div>
         <div class="rating-row">
-          <div class="rating-item"><span class="rl">Proteingehalt</span><div class="rb"><div class="rf" style="width:88%"></div></div><span class="rn">8.8</span></div>
-          <div class="rating-item"><span class="rl">Geschmack</span><div class="rb"><div class="rf" style="width:92%"></div></div><span class="rn">9.2</span></div>
-          <div class="rating-item"><span class="rl">Löslichkeit</span><div class="rb"><div class="rf" style="width:90%"></div></div><span class="rn">9.0</span></div>
-          <div class="rating-item"><span class="rl">Preis/Leistung</span><div class="rb"><div class="rf" style="width:85%"></div></div><span class="rn">8.5</span></div>
+          <div class="rating-item"><span class="rl">Proteingehalt</span>
+            <div class="rb">
+              <div class="rf" style="width:88%"></div>
+            </div><span class="rn">8.8</span>
+          </div>
+          <div class="rating-item"><span class="rl">Geschmack</span>
+            <div class="rb">
+              <div class="rf" style="width:92%"></div>
+            </div><span class="rn">9.2</span>
+          </div>
+          <div class="rating-item"><span class="rl">Löslichkeit</span>
+            <div class="rb">
+              <div class="rf" style="width:90%"></div>
+            </div><span class="rn">9.0</span>
+          </div>
+          <div class="rating-item"><span class="rl">Preis/Leistung</span>
+            <div class="rb">
+              <div class="rf" style="width:85%"></div>
+            </div><span class="rn">8.5</span>
+          </div>
         </div>
-        <p class="card-desc">ESN Designer Whey ist laut einer Statista-Umfrage Deutschlands beliebtestes Whey-Protein. Die Kombination aus Whey-Konzentrat und Whey-Isolat liefert bis zu 23g Protein pro 30g Portion bei niedriger Zucker- und Fettmenge. Amazon-Käufer loben besonders die gute Löslichkeit, cremige Konsistenz und die vielen Geschmackssorten (u.a. Donut, Stracciatella). eiweisspulver-test.com bezeichnet es als "zuverlässigen Allrounder für jeden Tag".</p>
+        <p class="card-desc">ESN Designer Whey ist laut einer Statista-Umfrage Deutschlands beliebtestes Whey-Protein.
+          Die Kombination aus Whey-Konzentrat und Whey-Isolat liefert bis zu 23g Protein pro 30g Portion bei niedriger
+          Zucker- und Fettmenge. Amazon-Käufer loben besonders die gute Löslichkeit, cremige Konsistenz und die vielen
+          Geschmackssorten (u.a. Donut, Stracciatella). eiweisspulver-test.com bezeichnet es als "zuverlässigen
+          Allrounder für jeden Tag".</p>
         <div class="pros-cons">
           <div class="pros">
             <div class="box-label">Vorteile</div>
@@ -638,7 +197,8 @@
             </ul>
           </div>
         </div>
-        <a href="https://www.amazon.de/s?k=ESN+Designer+Whey+Protein+1kg&tag=DEIN-AFFILIATE-TAG" class="affiliate-btn" target="_blank" rel="noopener">Auf Amazon ansehen →</a>
+        <a href="https://www.amazon.de/s?k=ESN+Designer+Whey+Protein+1kg&tag=DEIN-AFFILIATE-TAG" class="affiliate-btn"
+          target="_blank" rel="noopener">Auf Amazon ansehen →</a>
       </div>
     </div>
 
@@ -655,12 +215,31 @@
           <span class="rating-detail">4,3 / 5 auf Amazon.de | Weltweit eine der meistgekauften Proteinmarken</span>
         </div>
         <div class="rating-row">
-          <div class="rating-item"><span class="rl">Proteingehalt</span><div class="rb"><div class="rf" style="width:82%"></div></div><span class="rn">8.2</span></div>
-          <div class="rating-item"><span class="rl">Geschmack</span><div class="rb"><div class="rf" style="width:80%"></div></div><span class="rn">8.0</span></div>
-          <div class="rating-item"><span class="rl">Löslichkeit</span><div class="rb"><div class="rf" style="width:82%"></div></div><span class="rn">8.2</span></div>
-          <div class="rating-item"><span class="rl">Preis/Leistung</span><div class="rb"><div class="rf" style="width:97%"></div></div><span class="rn">9.7</span></div>
+          <div class="rating-item"><span class="rl">Proteingehalt</span>
+            <div class="rb">
+              <div class="rf" style="width:82%"></div>
+            </div><span class="rn">8.2</span>
+          </div>
+          <div class="rating-item"><span class="rl">Geschmack</span>
+            <div class="rb">
+              <div class="rf" style="width:80%"></div>
+            </div><span class="rn">8.0</span>
+          </div>
+          <div class="rating-item"><span class="rl">Löslichkeit</span>
+            <div class="rb">
+              <div class="rf" style="width:82%"></div>
+            </div><span class="rn">8.2</span>
+          </div>
+          <div class="rating-item"><span class="rl">Preis/Leistung</span>
+            <div class="rb">
+              <div class="rf" style="width:97%"></div>
+            </div><span class="rn">9.7</span>
+          </div>
         </div>
-        <p class="card-desc">MyProtein Impact Whey ist der günstigste solide Einstieg in die Welt der Proteinpulver. Für ~20€/kg bekommst du ~21g Protein pro Portion und eine riesige Auswahl an Geschmackssorten. Laut droptime.de das günstigste empfehlenswerte Whey auf dem deutschen Markt. Wichtig: Bei Aktionen (häufig) deutlich günstiger.</p>
+        <p class="card-desc">MyProtein Impact Whey ist der günstigste solide Einstieg in die Welt der Proteinpulver. Für
+          ~20€/kg bekommst du ~21g Protein pro Portion und eine riesige Auswahl an Geschmackssorten. Laut droptime.de
+          das günstigste empfehlenswerte Whey auf dem deutschen Markt. Wichtig: Bei Aktionen (häufig) deutlich
+          günstiger.</p>
         <div class="pros-cons">
           <div class="pros">
             <div class="box-label">Vorteile</div>
@@ -680,7 +259,8 @@
             </ul>
           </div>
         </div>
-        <a href="https://www.amazon.de/s?k=MyProtein+Impact+Whey+Protein&tag=DEIN-AFFILIATE-TAG" class="affiliate-btn" target="_blank" rel="noopener">Auf Amazon ansehen →</a>
+        <a href="https://www.amazon.de/s?k=MyProtein+Impact+Whey+Protein&tag=DEIN-AFFILIATE-TAG" class="affiliate-btn"
+          target="_blank" rel="noopener">Auf Amazon ansehen →</a>
       </div>
     </div>
 
@@ -694,15 +274,35 @@
         </div>
         <div class="amz-rating">
           <span class="stars-row">★★★★★</span>
-          <span class="rating-detail">4,6 / 5 auf Amazon.de – eines der am besten bewerteten Whey-Produkte weltweit</span>
+          <span class="rating-detail">4,6 / 5 auf Amazon.de – eines der am besten bewerteten Whey-Produkte
+            weltweit</span>
         </div>
         <div class="rating-row">
-          <div class="rating-item"><span class="rl">Proteingehalt</span><div class="rb"><div class="rf" style="width:95%"></div></div><span class="rn">9.5</span></div>
-          <div class="rating-item"><span class="rl">Geschmack</span><div class="rb"><div class="rf" style="width:88%"></div></div><span class="rn">8.8</span></div>
-          <div class="rating-item"><span class="rl">Löslichkeit</span><div class="rb"><div class="rf" style="width:92%"></div></div><span class="rn">9.2</span></div>
-          <div class="rating-item"><span class="rl">Preis/Leistung</span><div class="rb"><div class="rf" style="width:78%"></div></div><span class="rn">7.8</span></div>
+          <div class="rating-item"><span class="rl">Proteingehalt</span>
+            <div class="rb">
+              <div class="rf" style="width:95%"></div>
+            </div><span class="rn">9.5</span>
+          </div>
+          <div class="rating-item"><span class="rl">Geschmack</span>
+            <div class="rb">
+              <div class="rf" style="width:88%"></div>
+            </div><span class="rn">8.8</span>
+          </div>
+          <div class="rating-item"><span class="rl">Löslichkeit</span>
+            <div class="rb">
+              <div class="rf" style="width:92%"></div>
+            </div><span class="rn">9.2</span>
+          </div>
+          <div class="rating-item"><span class="rl">Preis/Leistung</span>
+            <div class="rb">
+              <div class="rf" style="width:78%"></div>
+            </div><span class="rn">7.8</span>
+          </div>
         </div>
-        <p class="card-desc">Das Gold Standard Whey von Optimum Nutrition ist seit Jahren eines der weltweit meistgekauften Proteinpulver – und mit 4,6 Sternen auf Amazon.de auch das bestbewertete in diesem Vergleich. Mit bis zu 24g Protein pro Portion, sehr guter Löslichkeit und konstantem Qualitätsniveau ist es die Premium-Wahl für alle, die keine Kompromisse machen wollen.</p>
+        <p class="card-desc">Das Gold Standard Whey von Optimum Nutrition ist seit Jahren eines der weltweit
+          meistgekauften Proteinpulver – und mit 4,6 Sternen auf Amazon.de auch das bestbewertete in diesem Vergleich.
+          Mit bis zu 24g Protein pro Portion, sehr guter Löslichkeit und konstantem Qualitätsniveau ist es die
+          Premium-Wahl für alle, die keine Kompromisse machen wollen.</p>
         <div class="pros-cons">
           <div class="pros">
             <div class="box-label">Vorteile</div>
@@ -722,38 +322,63 @@
             </ul>
           </div>
         </div>
-        <a href="https://www.amazon.de/s?k=Optimum+Nutrition+Gold+Standard+Whey+1kg&tag=DEIN-AFFILIATE-TAG" class="affiliate-btn" target="_blank" rel="noopener">Auf Amazon ansehen →</a>
+        <a href="https://www.amazon.de/s?k=Optimum+Nutrition+Gold+Standard+Whey+1kg&tag=DEIN-AFFILIATE-TAG"
+          class="affiliate-btn" target="_blank" rel="noopener">Auf Amazon ansehen →</a>
       </div>
     </div>
 
     <h2>Fazit</h2>
     <div class="verdict-box">
       <div class="verdict-title">Kaufempfehlung auf einen Blick</div>
-      <p style="color:var(--muted2);font-size:0.9rem;font-weight:300;line-height:1.7;">Für die meisten: <strong style="color:var(--text)">ESN Designer Whey</strong> – bestes Gesamt-Paket aus Geschmack, Qualität und Preis. Kleines Budget: <strong style="color:var(--text)">MyProtein</strong> oder Amazon-eigene Marke Amfit. Wer Qualität über alles stellt: <strong style="color:var(--text)">Optimum Nutrition Gold Standard</strong>.</p>
+      <p style="color:var(--muted2);font-size:0.9rem;font-weight:300;line-height:1.7;">Für die meisten: <strong
+          style="color:var(--text)">ESN Designer Whey</strong> – bestes Gesamt-Paket aus Geschmack, Qualität und Preis.
+        Kleines Budget: <strong style="color:var(--text)">MyProtein</strong> oder Amazon-eigene Marke Amfit. Wer
+        Qualität über alles stellt: <strong style="color:var(--text)">Optimum Nutrition Gold Standard</strong>.</p>
       <div class="verdict-grid">
-        <div class="verdict-item"><div class="verdict-label">Bestes Gesamt-Paket</div><div class="verdict-val">ESN Designer Whey</div></div>
-        <div class="verdict-item"><div class="verdict-label">Günstigstes</div><div class="verdict-val">MyProtein (~20€/kg)</div></div>
-        <div class="verdict-item"><div class="verdict-label">Beste Bewertung</div><div class="verdict-val">Optimum Nutrition (4,6★)</div></div>
+        <div class="verdict-item">
+          <div class="verdict-label">Bestes Gesamt-Paket</div>
+          <div class="verdict-val">ESN Designer Whey</div>
+        </div>
+        <div class="verdict-item">
+          <div class="verdict-label">Günstigstes</div>
+          <div class="verdict-val">MyProtein (~20€/kg)</div>
+        </div>
+        <div class="verdict-item">
+          <div class="verdict-label">Beste Bewertung</div>
+          <div class="verdict-val">Optimum Nutrition (4,6★)</div>
+        </div>
       </div>
     </div>
 
     <h2>Häufige Fragen</h2>
     <div class="faq">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">Wie viel Protein brauche ich pro Tag?<span class="faq-icon">+</span></div>
-        <div class="faq-a">Als Richtwert gelten 1,6–2,2g Protein pro kg Körpergewicht täglich für aktive Sportler. Bei 75 kg also ca. 120–165g Protein pro Tag. Das meiste solltest du über Mahlzeiten decken, Pulver füllt die Lücke.</div>
+        <div class="faq-q" onclick="toggleFaq(this)">Wie viel Protein brauche ich pro Tag?<span
+            class="faq-icon">+</span></div>
+        <div class="faq-a">Als Richtwert gelten 1,6–2,2g Protein pro kg Körpergewicht täglich für aktive Sportler. Bei
+          75 kg also ca. 120–165g Protein pro Tag. Das meiste solltest du über Mahlzeiten decken, Pulver füllt die
+          Lücke.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">Wann soll ich Proteinpulver trinken?<span class="faq-icon">+</span></div>
-        <div class="faq-a">Nach dem Training ist der klassische Zeitpunkt, um die Muskelregeneration zu unterstützen. Du kannst es aber auch morgens, als Zwischenmahlzeit oder vor dem Schlafen einnehmen – der Zeitpunkt ist weniger entscheidend als die tägliche Gesamtmenge.</div>
+        <div class="faq-q" onclick="toggleFaq(this)">Wann soll ich Proteinpulver trinken?<span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">Nach dem Training ist der klassische Zeitpunkt, um die Muskelregeneration zu unterstützen. Du
+          kannst es aber auch morgens, als Zwischenmahlzeit oder vor dem Schlafen einnehmen – der Zeitpunkt ist weniger
+          entscheidend als die tägliche Gesamtmenge.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">Whey oder veganes Protein – was ist besser?<span class="faq-icon">+</span></div>
-        <div class="faq-a">Whey hat ein vollständiges Aminosäureprofil und wird schnell aufgenommen – ideal für nach dem Training. Vegane Alternativen (Erbsen-, Reis-, Hanfprotein) sind für Laktoseintolerante oder Veganer geeignet, aber oft teurer und haben ein etwas anderes Aminosäureprofil.</div>
+        <div class="faq-q" onclick="toggleFaq(this)">Whey oder veganes Protein – was ist besser?<span
+            class="faq-icon">+</span></div>
+        <div class="faq-a">Whey hat ein vollständiges Aminosäureprofil und wird schnell aufgenommen – ideal für nach dem
+          Training. Vegane Alternativen (Erbsen-, Reis-, Hanfprotein) sind für Laktoseintolerante oder Veganer geeignet,
+          aber oft teurer und haben ein etwas anderes Aminosäureprofil.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">Sind teurere Proteinpulver wirklich besser?<span class="faq-icon">+</span></div>
-        <div class="faq-a">Nicht zwingend. Der Proteingehalt pro Portion ist entscheidend. Viel Geld geht oft für Aromen, Verpackung und Marketing drauf. Vergleiche immer den Proteingehalt pro 100g – das ist die ehrlichste Kennzahl.</div>
+        <div class="faq-q" onclick="toggleFaq(this)">Sind teurere Proteinpulver wirklich besser?<span
+            class="faq-icon">+</span></div>
+        <div class="faq-a">Nicht zwingend. Der Proteingehalt pro Portion ist entscheidend. Viel Geld geht oft für
+          Aromen, Verpackung und Marketing drauf. Vergleiche immer den Proteingehalt pro 100g – das ist die ehrlichste
+          Kennzahl.</div>
       </div>
     </div>
   </div>
@@ -768,6 +393,7 @@
       </div>
     </div>
   </footer>
-  <script>function toggleFaq(el){el.closest('.faq-item').classList.toggle('open')}</script>
+  <script>function toggleFaq(el) { el.closest('.faq-item').classList.toggle('open') }</script>
 </body>
+
 </html>
